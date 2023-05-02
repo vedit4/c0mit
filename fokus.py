@@ -1,17 +1,60 @@
-def parse(data:str):
-    list_ = data.split(sep=":")
-    items = ([int(x) for x in list_])
-    return items
+class wan:
+	def __init__(self, int_2: int, int_: int) -> None:
+		self.int_2 = int_2
+		self.int_ = int_
 
-def main():
-    ip =  "192:168:0:1"
-    parsed = parse(ip)
 
-    if 1 in parsed:
-        print(parsed)
-    elif 2 not in parsed:
-        print(";".join([str(x) for x in parsed])) # list comprehention
-    else:
-        print(parsed[-1])
+def wan_():
+	person = wan(3, 9)
+	print(person.int_ * person.int_2)
+	print(person.int_ / person.int_2)
+	
+
+
+
+
+
+
+class two:
+	def __init__(self, str_: str, int_: int) -> None:
+		self.str_ = str_
+		self.int_ = int_
+
+
+
+
+
+def two_():
+	person_2 = two("*", 15)
+	print(person_2.str_ * person_2.int_)
+
+
+
+
+
+
+class free :
+	def __init__(self, str_: str, str_2: str) -> None:
+		self.str_ = str_
+		self.str_2 = str_2
+		
+
+
+def free_():
+	person_3 = free("abcdfeg", "gcdhyol")
+
+
+
+
+
 if __name__ == "__main__":
-    main()
+    wan_()
+
+
+if __name__ == "__main__":
+    two_()
+
+
+
+if __name__ == "__main__":
+    free_()
